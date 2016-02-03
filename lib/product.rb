@@ -1,6 +1,6 @@
 class Product
 
-  attr_reader :title, :item_array, :stock, :price
+  attr_accessor :title, :item_array, :stock, :price
 
   @@products = []
 
@@ -12,7 +12,7 @@ class Product
   end
 
   def self.all
-    @@products
+    return @@products
   end
 
 
@@ -44,8 +44,5 @@ class Product
     return having_toys_in_stock = @@products.select {|toy| toy.stock != 0}
     #return having_toys_in_stock.map { |not_in_stock_toy| not_in_stock_toy.title}
   end
-
-
-
 
 end

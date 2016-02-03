@@ -31,28 +31,28 @@ firehouse = Product.find_by_title("LEGO Firehouse Headquarter")
 
 # CUSTOMERS
 
-# Customer.new(name: "Walter Latimer")
-# Customer.new(name: "Julia Van Cleve")
+ Customer.new(name: "Walter Latimer")
+ Customer.new(name: "Julia Van Cleve")
 
-# puts Customer.all.count # Should return 2
+ puts Customer.all.count # Should return 2
 
 # Customer.new(name: "Walter Latimer")
 # Should return DuplicateCustomerError: 'Walter Latimer' already exists.
 
-# walter = Customer.find_by_name("Walter Latimer")
+ walter = Customer.find_by_name("Walter Latimer")
 
-# puts walter.name # Should return "Walter Latimer"
+ puts walter.name # Should return "Walter Latimer"
 
 # TRANSACTIONS
 
-# transaction = Transaction.new(walter, nanoblock)
+ transaction = Transaction.new(walter, nanoblock)
 
-# puts transaction.id # Should return 1
-# puts transaction.product == nanoblock # Should return true
-# puts transaction.product == firehouse # Should return false
-# puts transaction.customer == walter # Should return true
+ puts transaction.id # Should return 1
+ puts transaction.product == nanoblock # Should return true
+ puts transaction.product == firehouse # Should return false
+ puts transaction.customer == walter # Should return true
 
-# puts nanoblock.stock # Should return 11
+ puts nanoblock.stock # Should return 11
 
 # PURCHASES
 
