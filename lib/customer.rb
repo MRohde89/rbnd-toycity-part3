@@ -34,4 +34,9 @@ class Customer
     return hash_of_names[0] # because there will always be just one element inside
   end
 
+
+  def purchase(item)
+    Transaction.new(self, item)
+  end
+  
 end
