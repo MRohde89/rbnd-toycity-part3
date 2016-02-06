@@ -36,8 +36,8 @@ class Product
     return hash_of_toys[0] # because there will always be just one element inside
   end
 
-  def in_stock?
-    self.stock != 0 ? true : false
+  def in_stock?(maybe_removed = 1)
+    self.stock - maybe_removed >= 0 ? true : false
   end
 
   def self.in_stock

@@ -2,6 +2,7 @@ require_relative "lib/errors"
 require_relative "lib/customer"
 require_relative "lib/product"
 require_relative "lib/transaction"
+require_relative "lib/wallet"
 
 
 # PRODUCTS
@@ -42,6 +43,14 @@ firehouse = Product.find_by_title("LEGO Firehouse Headquarter")
  walter = Customer.find_by_name("Walter Latimer")
 
  puts walter.name # Should return "Walter Latimer"
+
+#################################
+##### ADDED CODE ################
+#################################
+## WALLET NEEDS TO BE INITIALIZED BEFORE WE CAN DECREASE OR INCREASE THE AMOUNT
+#################################
+
+wallet = Wallet.new(1000)
 
 # TRANSACTIONS
 

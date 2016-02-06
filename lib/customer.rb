@@ -35,8 +35,8 @@ class Customer
   end
 
 
-  def purchase(item)
-    Transaction.new(self, item)
+  def purchase(item, quantity = 1, sell_or_buy = 'sell', discount = 0)
+    Transaction.new(self, item, quantity, sell_or_buy, discount)
   end
-  
+
 end
