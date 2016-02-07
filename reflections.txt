@@ -1,0 +1,25 @@
+Reflections:
+
+1. How long did you spend working on this project?
+2. What was the most rewarding challenge you conquered?
+3. What two additional features did you build? Why?
+4. Where do you still have room to grow?
+
+
+1.
+I spend approximately 6 hours for this project. Most of the time i was trying to increase the functionality without throwing errors in the app.rb file
+
+2.
+The most rewarding on this challenge was the overall process of developing a system which can be used as an inventory system.
+There is still stuff to add to make it fully usable, but i liked to develop a process and also implementing it all by my own
+
+3.
+One of the feature implemented is a wallet, which will decrease of increase if there is a transaction by a customer or if the inventory increases by purchases from a vendor
+Furthermore there are now additional options for the transaction. like buy, sell, quantity and a additional discount.
+The transaction class also includes now a timestamp and a username which will be automatically added (as a fraud prevention)
+In addition, the transaction class can now be saved in a file, like a report
+
+4.
+I still have room to grow in inheritance methods. I really would like to have those 3 classes inherited by a common inventory class.
+Methods like self.all are used for products, transaction and customer have the same function. I tried to find a solution for that online,
+but i wasn't able to find any decent information on how to inherit Class functions with self and/or a class variable.
