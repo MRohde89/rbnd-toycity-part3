@@ -52,6 +52,10 @@ firehouse = Product.find_by_title("LEGO Firehouse Headquarter")
 
 wallet = Wallet.new(1000)
 
+
+#################################
+#################################
+
 # TRANSACTIONS
 
  transaction = Transaction.new(walter, nanoblock)
@@ -72,5 +76,7 @@ wallet = Wallet.new(1000)
  transaction2 = Transaction.find(2)
  puts transaction2.product == nanoblock # Should return true
 
-walter.purchase(firehouse)
+ Transaction.save_to_file
+
+#walter.purchase(firehouse)
 # Should return OutOfStockError: 'LEGO Firehouse Headquarter' is out of stock.

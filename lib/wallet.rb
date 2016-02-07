@@ -1,6 +1,6 @@
 class Wallet
 
-  attr_accessor :money
+  attr_reader :money
 
   @@wallet
 
