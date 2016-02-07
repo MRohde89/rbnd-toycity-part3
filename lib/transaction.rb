@@ -16,7 +16,6 @@ class Transaction
     @product.price = @product.price * (1-discount)
     @timestamp = timestamp
     @username = Etc.getlogin
-
     if @sell_or_buy == 'sell'
       # first it needs to be checked if there is enough in inventory, before we add it to the transaction
       # an error will raise if there is not enough in stock
@@ -84,10 +83,10 @@ class Transaction
   def self.make_header
     $transaction_file.puts           " _______                             _   _                "
     $transaction_file.puts           "|__   __|                           | | (_)                "
-    $transaction_file.puts           "  | |_ __ __ _ _ __  ___  __ _  ___| |_ _  ___  _ __  ___ "
-    $transaction_file.puts           "  | | '__/ _` | '_ \\/ __|/ _` |/ __| __| |/ _ \\| '_ \\/ __|"
-    $transaction_file.puts           "  | | | | (_| | | | \\__ \\ (_| | (__| |_| | (_) | | | \\__ \\"
-    $transaction_file.puts           "  |_|_|  \\__,_|_| |_|___/\\__,_|\\___|\\__|_|\\___/|_| |_|___/"
+    $transaction_file.puts           "   | |_ __ __ _ _ __  ___  __ _  ___| |_ _  ___  _ __  ___ "
+    $transaction_file.puts           "   | | '__/ _` | '_ \\/ __|/ _` |/ __| __| |/ _ \\| '_ \\/ __|"
+    $transaction_file.puts           "   | | | | (_| | | | \\__ \\ (_| | (__| |_| | (_) | | | \\__ \\"
+    $transaction_file.puts           "   |_|_|  \\__,_|_| |_|___/\\__,_|\\___|\\__|_|\\___/|_| |_|___/"
     $transaction_file.puts
   end
 

@@ -76,6 +76,7 @@ wallet = Wallet.new(1000)
  transaction2 = Transaction.find(2)
  puts transaction2.product == nanoblock # Should return true
 
+ puts Wallet.show
  Transaction.save_to_file
 
 #walter.purchase(firehouse)
