@@ -1,19 +1,19 @@
 class Wallet
 
-  attr_reader :money
+  @@wallet = 0
 
-  @@wallet
-
-  def initialize(money = 1000)
+  def initialize(money = 0)
     @@wallet = money
   end
 
-    # the amount needs to be the opposite, because if quantity is "-" then the wallet will increase
-    def self.change_money(amount)
-      if @@wallet+amount > 0 ? @@wallet -= amount : (raise NoMoneyError, "Can not do transaction with amount #{amount}, because it exceeds current wallet (current cash: #{@@wallet.show})")
+    # DECREASES/INCREASES MONEY OF THE WALLET
+    def self.change_cash(amount)
+      # the amount needs to be the opposite, because if quantity is "-" then the wallet will increase
+      if @@wallet-amount >= 0 ? @@wallet -= amount : (raise NoMoneyError, "Can not do transaction with amount #{amount}, because it exceeds current wallet (current cash: #{@@wallet})")
       end
     end
 
+  # SHOWS MONEY IN WALLET
   def self.show
     return @@wallet
   end

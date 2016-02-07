@@ -44,18 +44,6 @@ firehouse = Product.find_by_title("LEGO Firehouse Headquarter")
 
  puts walter.name # Should return "Walter Latimer"
 
-#################################
-##### ADDED CODE ################
-#################################
-## WALLET NEEDS TO BE INITIALIZED BEFORE WE CAN DECREASE OR INCREASE THE AMOUNT
-#################################
-
-wallet = Wallet.new(1000)
-
-
-#################################
-#################################
-
 # TRANSACTIONS
 
  transaction = Transaction.new(walter, nanoblock)
